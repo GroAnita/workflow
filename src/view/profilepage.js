@@ -2,7 +2,7 @@ export default function ProfilePage(users = []) {
   const container = document.createElement("section");
   container.className = "mx-auto";
 
-  const backButton = document.createElement("a");
+  const backButton = document.createElement("button");
   backButton.className = "no-underline text-pink-800 font-bold cursor-pointer";
   backButton.textContent = "Go Back";
   backButton.dataset.link = "/";

@@ -1,4 +1,4 @@
-import profilePageService from "../services/profilePageService";
+import profilePageService from "../services/profilePageService.js";
 
 export default async function initProfilePage() {
   try {

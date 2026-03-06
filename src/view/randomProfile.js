@@ -5,6 +5,7 @@ export default function randomProfile(user) {
   const backButton = document.createElement("a");
   backButton.className = "no-underline text-cyan-800 font-bold cursor-pointer";
   backButton.textContent = "Go back";
+  backButton.href = "/";
   backButton.dataset.link = "/";
 
   const profileHeadLine = document.createElement("h1");

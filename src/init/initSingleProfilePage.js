@@ -15,6 +15,5 @@ export default async function initSingleProfilePage(id) {
     p.textContent = "User not found";
     return p;
   }
-  console.log("users:", users);
   return SingleProfilePage(user);
 }

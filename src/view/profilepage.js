@@ -5,7 +5,7 @@ export default function ProfilePage(users = []) {
   const backButton = document.createElement("a");
   backButton.className = "no-underline text-pink-800 font-bold cursor-pointer";
   backButton.textContent = "Go Back";
-  backButton.dataset.link = "data-link";
+  backButton.dataset.link = "/";
 
   const profileGrid = document.createElement("div");
   profileGrid.className =

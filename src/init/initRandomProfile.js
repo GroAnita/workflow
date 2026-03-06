@@ -10,7 +10,7 @@ export default async function initRandomProfile() {
     //selects a random user
     const randomUser = user[randomIndex];
     //Navigato to that profile
-    navigateTo(`/profile/${randomUser.id}`);
+    navigateTo(`/profilePage/${randomUser.id}`);
   } catch (error) {
     console.error("Failed to load random Profile", error);
   }

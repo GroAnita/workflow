@@ -5,11 +5,12 @@ export default async function initProfilePage() {
     const users = await profilePageService();
     if (!users || users.length === 0) {
       console.warn("no Users found;");
-      return;
+      return [];
     }
 
     return users;
   } catch (error) {
     console.error("not able to fetch profiles", error);
+    return [];
   }
 }

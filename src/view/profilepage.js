@@ -10,8 +10,6 @@ export default function ProfilePage(users = []) {
   const profileGrid = document.createElement("div");
   profileGrid.className =
     "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4";
-  console.log(users);
-  console.log(Array.isArray(users));
   users.forEach((user) => {
     const profileContainer = document.createElement("article");
     profileContainer.className =

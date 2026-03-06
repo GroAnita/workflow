@@ -3,7 +3,7 @@ export default function SingleProfilePage(user) {
   container.className = "mx-auto";
 
   const backButton = document.createElement("a");
-  backButton.className = "no-underline text-pink-800 text-bold";
+  backButton.className = "no-underline text-pink-800 font-bold";
   backButton.textContent = "Go Back";
   backButton.dataset.link = "/";
 

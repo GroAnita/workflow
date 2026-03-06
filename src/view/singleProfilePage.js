@@ -5,6 +5,7 @@ export default function SingleProfilePage(user) {
   const backButton = document.createElement("a");
   backButton.className = "no-underline text-pink-800 font-bold";
   backButton.textContent = "Go Back";
+  backButton.href = "#";
   backButton.dataset.link = "/";
 
   const profileBox = document.createElement("article");

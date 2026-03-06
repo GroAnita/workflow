@@ -6,10 +6,19 @@ export default async function apiClient(endpoint, options = {}) {
   const API_KEY = import.meta.env.VITE_NOROFF_API_KEY;
   const headers = {
     "Content-Type": "application/json",
-    "X-Noroff-Api-Key": API_KEY,
     ...options.headers,
   };
 
+  // Only set the X-Noroff-Api-Key header when an API key is available.
+  // If the header is required and not provided via options, fail fast with a clear error.
+  if (!headers["X-Noroff-Api-Key"]) {
+    if (!API_KEY) {
+      throw new Error(
+        "Missing VITE_NOROFF_API_KEY environment variable required for Noroff API requests."
+      );
+    }
+    headers["X-Noroff-Api-Key"] = API_KEY;
+  }
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }

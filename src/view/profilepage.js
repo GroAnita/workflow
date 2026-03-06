@@ -20,7 +20,7 @@ export default function ProfilePage(users = []) {
     profileImage.src = `https://images.pexels.com/photos/35873260/pexels-photo-35873260.jpeg`;
     profileImage.alt = user.name;
     profileImage.className =
-      "w-50 h-50 rounded-lg border-0 mx-auto object-cover mb-3";
+      "w-[200px] h-[200px] rounded-lg border-0 mx-auto object-cover mb-3";
 
     const profileHeadLine = document.createElement("h1");
     profileHeadLine.textContent = user.name;

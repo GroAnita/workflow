@@ -48,7 +48,7 @@ export default function Home() {
   linkContainer.appendChild(profileLink);
   container.appendChild(linkContainer);
   loginButton.addEventListener("click", () => {
-    initLoginModal("login-data");
+    initLoginModal();
   });
 
   return container;

@@ -6,15 +6,12 @@ import randomProfile from "../view/randomProfile.js";
 
 export default async function router() {
   let path = window.location.pathname;
-  console.log("Original pathname:", window.location.pathname);
-  console.log("Processed path:", path);
   try {
     const basePath = "/workflow";
 
     if (path.startsWith(basePath)) {
       path = path.slice(basePath.length) || "/";
     }
-    console.log("processed path:", path);
     const app = document.getElementById("app");
     app.innerHTML = "";
 

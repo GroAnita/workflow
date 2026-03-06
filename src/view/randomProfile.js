@@ -21,11 +21,11 @@ export default function randomProfile(user) {
 
   const profileName = document.createElement("h2");
   profileName.className = "text-xl text-pink-900 text-bold";
-  const displayName = user?.name || "Unknown user";
-  profileName.textContent = displayName;
+  profileName.className = "text-xl text-pink-900 font-bold";
+  profileName.textContent = user.name;
 
   const profileEmail = document.createElement("p");
-  profileEmail.className = "text-md text-pink-400";
+  profileEmail.className = "text-base text-pink-400";
   const displayEmail = user?.email || "Unknown email";
   profileEmail.textContent = displayEmail;
 

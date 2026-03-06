@@ -1,5 +1,5 @@
 import profilePageService from "../services/profilePageService.js";
-import { navigateTo } from "../router/router.js";
+import { navigateTo } from "../main.js";
 
 export default async function initRandomProfile() {
   try {

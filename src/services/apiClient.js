@@ -1,4 +1,4 @@
-let API_BASE_URL = "https://v2.api.noroff.dev/";
+const API_BASE_URL = "https://v2.api.noroff.dev/";
 
 export default async function apiClient(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;

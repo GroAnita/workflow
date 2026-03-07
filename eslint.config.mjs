@@ -1,4 +1,4 @@
-//import js from "@eslint/js";
+import js from "@eslint/js";
 import globals from "globals";
 //import { defineConfig } from "eslint/config";
 
@@ -14,8 +14,7 @@ export default [
         module: true,
         process: true,
       },
+    },
   },
-},
-pluginJs.configs.recommended,
+  js.configs.recommended,
 ];
-
